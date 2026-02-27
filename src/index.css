@@ -68,3 +68,14 @@ img{
   color: #c6c6c6;
   border-radius: 20px;
 }
+
+.nutrition-table {
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding-left: 40px ;
+}
+
+.fruits-list {
+  display: block;
+}

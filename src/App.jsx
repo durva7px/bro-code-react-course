@@ -1,18 +1,24 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import Card from './Card';
-import Button from './Button/Button'
+import Button from './Button'
 import Box from './Box'
 import Student from './Student'
 import Greeting from "./Greeting";
 import List from "./List"
+import Pfp from "./Pfp"
 
 const App = () => {
+
+  const fruits = [{name: "apple", cals:97},
+        {name: "pineapple", cals:66},
+        {name: "orange", cals:89}
+    ];
+
   return(
     <div>
       <Header/>
       <Card/>
-      <Button/>
       <Box/>
       <h2>Student Data</h2>
       <Student name="Jolene" age={33} subject="English" isStudent={false} />
@@ -21,7 +27,9 @@ const App = () => {
       <Greeting isLoggedIn={true} userName="starbucksmonster23"/>
       <Greeting isLoggedIn={false} userName="queenofhearts"/>
       
-      <List/>
+      <List fruitList={fruits} />
+      <Button/>
+      <Pfp/>
       <Footer/>
     </div>
   );
