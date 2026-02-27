@@ -10,6 +10,7 @@ import Pfp from "./Pfp"
 
 const App = () => {
 
+  fetch('http://localhost:3000').then(res => res.text()).then(data => console.log(data))
   const fruits = [{name: "apple", cals:97},
         {name: "pineapple", cals:66},
         {name: "orange", cals:89}
